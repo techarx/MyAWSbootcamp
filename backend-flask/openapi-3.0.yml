@@ -152,17 +152,17 @@ paths:
     get:
       description: 'Return a feed of activity for all those that I follow'
       tags:
-        -activities
+        - activities
       parameters: []
       responses:
         '200':
-          description: 'Returns an array of activities'
+          description: Returns an array of activities
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref:'#/components/schemas/Activity'
+                  $ref: '#/components/schemas/Activity'
 
 components:
   schemas:
